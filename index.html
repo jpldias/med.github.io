@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaMarkt - Dias Sem IVA!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ff0000;
+        }
+        .header {
+            background-color: #ffffff;
+            color: #df0000;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .countdown {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .section {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #df0000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #df0000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            color: #000000;
+        }
+        .image-container {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product {
+            border: 2px solid #df0000;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .product::before {
+            content: "SEM IVA";
+            position: absolute;
+            top: 10px;
+            right: -30px;
+            background: #df0000;
+            color: #fff;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            font-size: 12px;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .unsubscribe {
+            margin-top: 10px;
+        }
+        .unsubscribe a {
+            color: #666;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img/pngwing.com.png" alt="MediaMarkt Logo" class="logo">
+        <span>🚀 Dias Sem IVA na MediaMarkt! 🚀</span>
+    </div>
+
+    <div class="countdown">
+        A promoção termina em: <span id="countdown">48:00:00</span>
+    </div>
+
+    <div class="section">
+        <h2>Aproveita Já! Todos os Produtos Sem IVA!</h2>
+        <p>Olá tech lover! 👋</p>
+        <p>Prepara-te para a maior promoção do ano! Durante 2 dias, todos os produtos da MediaMarkt estão com desconto igual ao IVA. Sim, leste bem, TODOS OS PRODUTOS! 😱</p>
+        <a href="https://mediamarkt.pt/" class="cta-button">Ver Todos os Produtos</a>
+    </div>
+
+    <div class="section">
+        <h2>Destaques Imperdíveis</h2>
+        
+        <div class="product">
+            <img src="https://mediamarkt.pt/cdn/shop/files/1520-1_cfc7849b-ff6a-4a7f-aef6-3bb877ac5e9a_large.jpg?v=1726214372" alt="Smart TV 4K">
+            <h3>Smart TV Samsung 55" QLED 4K</h3>
+            <p>Transforma a tua sala num cinema!</p>
+            <a href="https://mediamarkt.pt/products/smart-tv-samsung-tq55q60d-qled-55-ultra-hd-4k" class="cta-button">Comprar Agora</a>
+        </div>
+
+        <div class="product">
+            <img src="https://mediamarkt.pt/cdn/shop/files/1505-1_a9f18f8e-ee74-4986-9eef-d19ca123817f_1024x1024.jpg?v=1726093145" alt="Smartphone Topo de Gama">
+            <h3>Smartphone Última Geração</h3>
+            <p>Potência e estilo na palma da tua mão!</p>
+            <a href="https://mediamarkt.pt/collections/all?page=1&rb_tags=Apple%20iPhone%2016%20Pro|Apple%20iPhone%2016%20Pro%20Max" class="cta-button">Comprar Agora</a>
+        </div>
+
+        <div class="product">
+            <img src="https://mediamarkt.pt/cdn/shop/products/71Ps9hG7ImL._AC_SL1500_1024x1024.jpg?v=1652195335" alt="Máquina de Café">
+            <h3>Máquina de Café Automática</h3>
+            <p>O teu barista pessoal 24/7!</p>
+            <a href="https://mediamarkt.pt/collections/super-tech?page=1&rb_tags=FAM1%3A1004_CASA&tab=products&rb_snize_facet37=Máquinas%20Café#campanha" class="cta-button">Comprar Agora</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Não Percas Esta Oportunidade!</h2>
+        <p>Lembra-te: esta promoção é válida apenas por 48 horas. Não deixes para amanhã o que podes comprar hoje (sem IVA)! 😉</p>
+        <a href="https://mediamarkt.pt/" class="cta-button">Ir às Compras</a>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 MediaMarkt. Todos os direitos reservados.</p>
+        <p>Promoção válida de 15/09/2024 a 16/09/2024, limitada ao stock existente. Desconto de 23% sobre o preço de venda ao público nos produtos elegíveis.</p>
+        <div class="unsubscribe">
+            <p>Preferes não receber mais as nossas promoções? <a href="#">Clica aqui para cancelar a subscrição</a>. Mas atenção, podes perder as melhores ofertas do mercado!</p>
+        </div>
+    </div>
+
+    <script>
+        // Simples countdown script
+        function updateCountdown() {
+            var countdownElement = document.getElementById('countdown');
+            var parts = countdownElement.innerHTML.split(':');
+            var hours = parseInt(parts[0], 10);
+            var minutes = parseInt(parts[1], 10);
+            var seconds = parseInt(parts[2], 10);
+
+            if (seconds > 0) {
+                seconds--;
+            } else {
+                if (minutes > 0) {
+                    minutes--;
+                    seconds = 59;
+                } else {
+                    if (hours > 0) {
+                        hours--;
+                        minutes = 59;
+                        seconds = 59;
+                    }
+                }
+            }
+
+            countdownElement.innerHTML = 
+                (hours < 10 ? '0' + hours : hours) + ':' +
+                (minutes < 10 ? '0' + minutes : minutes) + ':' +
+                (seconds < 10 ? '0' + seconds : seconds);
+
+            if (hours > 0 || minutes > 0 || seconds > 0) {
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+
+        updateCountdown();
+    </script>
+</body>
+</html>
